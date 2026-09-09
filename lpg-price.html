@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LPG Price in Pakistan Today — Latest LPG Rate | Daily Rate PK</title>
+<meta name="description" content="Check today's LPG price in Pakistan per kilogram and cylinder. Get latest LPG rates and updates on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a href="index.html" class="logo">Daily Rate PK</a>
+<nav><a href="index.html">Home</a><a href="petrol-price.html">Petrol</a><a href="gold-price.html">Gold</a><a href="dollar-rate.html">Dollar</a><a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<main class="container page-content">
+<section class="page-hero">
+<span class="eyebrow">LPG • PAKISTAN</span>
+<h1>LPG Price in Pakistan Today</h1>
+<p>Latest LPG price per kilogram and cylinder in Pakistan.</p>
+</section>
+
+<section class="rate-highlight">
+<h2>Today's LPG Price</h2>
+<div class="price" id="lpg-main-price">Updating</div>
+<p>LPG — Per Kilogram</p>
+</section>
+
+<section class="content-section">
+<h2>LPG Rates</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Unit</th><th>Rate</th></tr>
+<tr><td>1 KG</td><td id="lpg-kg">Updating</td></tr>
+<tr><td>11.8 KG Cylinder</td><td id="lpg-11-8">Updating</td></tr>
+<tr><td>45.4 KG Cylinder</td><td id="lpg-45-4">Updating</td></tr>
+</table>
+</div>
+</section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the LPG price in Pakistan today?</h3>
+<p>The latest verified LPG rate will be displayed above.</p>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</div></footer>
+
+<script src="data.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const rate = DAILY_RATES.fuel.lpg;
+
+    const money = value =>
+        value === null || value === undefined
+            ? "Updating"
+            : "PKR " + Number(value).toLocaleString("en-PK", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              });
+
+    document.getElementById("lpg-main-price").textContent = money(rate);
+    document.getElementById("lpg-kg").textContent = money(rate);
+    document.getElementById("lpg-11-8").textContent = money(rate * 11.8);
+    document.getElementById("lpg-45-4").textContent = money(rate * 45.4);
+});
+</script>
+</body>
+</html>

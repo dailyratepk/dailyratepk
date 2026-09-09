@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dollar Rate in Pakistan Today — USD to PKR | Daily Rate PK</title>
+<meta name="description" content="Check today's dollar rate in Pakistan and USD to PKR exchange rate. Get latest currency rates and updates on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container nav-wrap">
+<a href="index.html" class="logo">Daily Rate PK</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="petrol-price.html">Petrol</a>
+<a href="gold-price.html">Gold</a>
+<a href="dollar-rate.html">Dollar</a>
+<a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div>
+</header>
+
+<main class="container page-content">
+<section class="page-hero">
+<span class="eyebrow">CURRENCY • PAKISTAN</span>
+<h1>Dollar Rate in Pakistan Today</h1>
+<p>Latest USD to PKR exchange rate and currency updates.</p>
+</section>
+
+<section class="rate-highlight">
+<h2>USD to PKR Today</h2>
+<div class="price">Updating</div>
+<p>1 US Dollar</p>
+</section>
+
+<section class="content-section">
+<h2>Currency Rates</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Currency</th><th>Buy</th><th>Sell</th></tr>
+<tr><td>USD / PKR</td><td class="usd-buy">Updating</td><td class="usd-sell">Updating</td></tr>
+<tr><td>AED / PKR</td><td class="aed-buy">Updating</td><td class="aed-sell">Updating</td></tr>
+<tr><td>SAR / PKR</td><td class="sar-buy">Updating</td><td class="sar-sell">Updating</td></tr>
+<tr><td>GBP / PKR</td><td class="gbp-buy">Updating</td><td class="gbp-sell">Updating</td></tr>
+</table>
+</div>
+</section>
+
+<section class="content-section">
+<h2>USD to PKR History</h2>
+<p>Compare today's dollar rate with previous exchange rates and track currency movements.</p>
+</section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the dollar rate in Pakistan today?</h3>
+<p>The latest verified USD to PKR rate will appear above.</p>
+<h3>How much is 1 USD in Pakistani Rupees?</h3>
+<p>The current conversion rate is shown in the USD to PKR section.</p>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</div></footer>
+
+<script src="data.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const c = DAILY_RATES.currency;
+
+  document.querySelectorAll(".price").forEach(e => {
+    e.textContent = c.usd === null
+      ? "Updating"
+      : "PKR " + Number(c.usd).toLocaleString("en-PK");
+  });
+
+  const setRate = (selector, value) => {
+    document.querySelector(selector).textContent =
+      value === null ? "Updating" : "PKR " + Number(value).toLocaleString("en-PK");
+  };
+
+  setRate(".usd-buy", c.usd);
+  setRate(".usd-sell", c.usd);
+  setRate(".aed-buy", c.aed);
+  setRate(".aed-sell", c.aed);
+  setRate(".sar-buy", c.sar);
+  setRate(".sar-sell", c.sar);
+  setRate(".gbp-buy", c.gbp);
+  setRate(".gbp-sell", c.gbp);
+});
+</script>
+</body>
+</html>

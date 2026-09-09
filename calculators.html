@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakistan Calculators — Fuel, Gold, Currency & Percentage | Daily Rate PK</title>
+<meta name="description" content="Use free online fuel cost, gold, USD to PKR, AED to PKR, SAR to PKR and percentage calculators on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-wrap">
+<a href="index.html" class="logo">Daily Rate PK</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="petrol-price.html">Petrol</a>
+<a href="gold-price.html">Gold</a>
+<a href="dollar-rate.html">Dollar</a>
+<a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div>
+</header>
+
+<main class="container page-content">
+
+<section class="page-hero">
+<span class="eyebrow">FREE ONLINE TOOLS</span>
+<h1>Pakistan Calculators</h1>
+<p>Calculate fuel costs, gold value, currency conversions and percentages.</p>
+</section>
+
+<div class="calculator-grid">
+
+<div class="calc-box">
+<h2>⛽ Fuel Cost Calculator</h2>
+<label>Distance (KM)</label>
+<input id="distance" type="number" placeholder="e.g. 300">
+<label>Vehicle Average (KM/L)</label>
+<input id="average" type="number" placeholder="e.g. 15">
+<label>Fuel Price (PKR/L)</label>
+<input id="fuelprice" type="number" placeholder="e.g. 350">
+<button onclick="fuelCalc()">Calculate</button>
+<div id="fuelresult" class="result">Result will appear here</div>
+</div>
+
+<div class="calc-box">
+<h2>🪙 Gold Calculator</h2>
+<label>Gold Weight (grams)</label>
+<input id="goldweight" type="number" placeholder="e.g. 10">
+<label>Price per Gram (PKR)</label>
+<input id="goldgram" type="number" placeholder="e.g. 40000">
+<button onclick="goldCalc()">Calculate</button>
+<div id="goldresult" class="result">Result will appear here</div>
+</div>
+
+<div class="calc-box">
+<h2>💵 USD → PKR</h2>
+<label>USD Amount</label>
+<input id="usd" type="number" placeholder="e.g. 100">
+<label>USD Rate (PKR)</label>
+<input id="usdrate" type="number" placeholder="e.g. 300">
+<button onclick="usdCalc()">Convert</button>
+<div id="usdresult" class="result">Result will appear here</div>
+</div>
+
+<div class="calc-box">
+<h2>🇦🇪 AED → PKR</h2>
+<label>AED Amount</label>
+<input id="aed" type="number" placeholder="e.g. 100">
+<label>AED Rate (PKR)</label>
+<input id="aedrate" type="number" placeholder="e.g. 82">
+<button onclick="aedCalc()">Convert</button>
+<div id="aedresult" class="result">Result will appear here</div>
+</div>
+
+<div class="calc-box">
+<h2>🇸🇦 SAR → PKR</h2>
+<label>SAR Amount</label>
+<input id="sar" type="number" placeholder="e.g. 100">
+<label>SAR Rate (PKR)</label>
+<input id="sarrate" type="number" placeholder="e.g. 80">
+<button onclick="sarCalc()">Convert</button>
+<div id="sarresult" class="result">Result will appear here</div>
+</div>
+
+<div class="calc-box">
+<h2>📊 Percentage Calculator</h2>
+<label>Percentage (%)</label>
+<input id="percent" type="number" placeholder="e.g. 15">
+<label>Number</label>
+<input id="number" type="number" placeholder="e.g. 5000">
+<button onclick="percentCalc()">Calculate</button>
+<div id="percentresult" class="result">Result will appear here</div>
+</div>
+
+</div>
+
+<section class="content-section">
+<h2>Free Pakistan Rate Calculators</h2>
+<p>Daily Rate PK provides simple online calculators for everyday calculations including fuel expenses, gold value, currency conversion and percentages.</p>
+</section>
+
+</main>
+
+<footer>
+<div class="container">© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+function val(id){
+    return parseFloat(document.getElementById(id).value) || 0;
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+    const r = DAILY_RATES;
+
+    document.getElementById("fuelprice").value = r.fuel.petrol ?? "";
+    document.getElementById("goldgram").value = r.metals.gold24kGram ?? "";
+    document.getElementById("usdrate").value = r.currency.usd ?? "";
+    document.getElementById("aedrate").value = r.currency.aed ?? "";
+    document.getElementById("sarrate").value = r.currency.sar ?? "";
+});
+
+function fuelCalc(){
+    let d = val("distance");
+    let a = val("average");
+    let p = val("fuelprice");
+
+    if(a <= 0){
+        document.getElementById("fuelresult").innerText =
+            "Enter a valid vehicle average.";
+        return;
+    }
+
+    let litres = d / a;
+    let cost = litres * p;
+
+    document.getElementById("fuelresult").innerText =
+        "Fuel needed: " + litres.toFixed(2) +
+        " L | Estimated cost: PKR " + cost.toFixed(2);
+}
+
+function goldCalc(){
+    let w = val("goldweight");
+    let p = val("goldgram");
+
+    document.getElementById("goldresult").innerText =
+        "Estimated gold value: PKR " + (w * p).toFixed(2);
+}
+
+function usdCalc(){
+    document.getElementById("usdresult").innerText =
+        "PKR " + (val("usd") * val("usdrate")).toFixed(2);
+}
+
+function aedCalc(){
+    let rate = val("aedrate");
+
+    if(rate <= 0){
+        document.getElementById("aedresult").innerText =
+            "AED rate is currently unavailable.";
+        return;
+    }
+
+    document.getElementById("aedresult").innerText =
+        "PKR " + (val("aed") * rate).toFixed(2);
+}
+
+function sarCalc(){
+    let rate = val("sarrate");
+
+    if(rate <= 0){
+        document.getElementById("sarresult").innerText =
+            "SAR rate is currently unavailable.";
+        return;
+    }
+
+    document.getElementById("sarresult").innerText =
+        "PKR " + (val("sar") * rate).toFixed(2);
+}
+
+function percentCalc(){
+    document.getElementById("percentresult").innerText =
+        val("percent") + "% of " +
+        val("number") + " = " +
+        ((val("percent") / 100) * val("number")).toFixed(2);
+}
+</script>
+</body>
+</html>

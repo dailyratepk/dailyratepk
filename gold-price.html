@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Price in Pakistan Today — Latest Gold Rate | Daily Rate PK</title>
+<meta name="description" content="Check today's gold price in Pakistan, gold rate per tola, 10 gram and gram. Get latest gold prices, history and updates on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container nav-wrap">
+<a href="index.html" class="logo">Daily Rate PK</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="petrol-price.html">Petrol</a>
+<a href="gold-price.html">Gold</a>
+<a href="dollar-rate.html">Dollar</a>
+<a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div>
+</header>
+
+<main class="container page-content">
+<section class="page-hero">
+<span class="eyebrow">GOLD RATE • PAKISTAN</span>
+<h1>Gold Price in Pakistan Today</h1>
+<p>Latest gold rate per tola, 10 grams and gram in Pakistan.</p>
+</section>
+
+<section class="rate-highlight">
+<h2>Today's Gold Rate</h2>
+<div class="price" id="gold-main-price">Updating</div>
+<p>24K Gold — Per Tola</p>
+</section>
+
+<section class="content-section">
+<h2>Gold Prices in Pakistan</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Gold Type</th><th>Unit</th><th>Rate</th></tr>
+<tr><td>24K Gold</td><td>1 Tola</td><td id="gold-tola">Updating</td></tr>
+<tr><td>24K Gold</td><td>10 Grams</td><td id="gold-10g">Updating</td></tr>
+<tr><td>24K Gold</td><td>1 Gram</td><td id="gold-gram">Updating</td></tr>
+<tr><td>22K Gold</td><td>1 Tola</td><td id="gold-22k-tola">Updating</td></tr>
+</table>
+</div>
+</section>
+
+<section class="content-section">
+<h2>Gold Price History</h2>
+<p>Daily Rate PK will provide historical gold prices so you can compare today's rate with previous prices.</p>
+</section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the gold price in Pakistan today?</h3>
+<p>The latest verified gold rate will be displayed above.</p>
+<h3>What is the price of one tola of gold?</h3>
+<p>The 24K gold per-tola rate is shown in the latest rate section.</p>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</div></footer>
+
+<script src="data.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const r = DAILY_RATES.metals;
+
+    const money = value =>
+        value === null || value === undefined
+            ? "Updating"
+            : "PKR " + Number(value).toLocaleString("en-PK", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              });
+
+    document.getElementById("gold-main-price").textContent = money(r.gold24kTola);
+    document.getElementById("gold-tola").textContent = money(r.gold24kTola);
+    document.getElementById("gold-10g").textContent = money(r.gold24k10g);
+    document.getElementById("gold-gram").textContent = money(r.gold24kGram);
+    document.getElementById("gold-22k-tola").textContent = money(r.gold22kTola);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Price in Pakistan Today — Latest Silver Rate | Daily Rate PK</title>
+<meta name="description" content="Check today's silver price in Pakistan per tola, 10 grams and gram. Get latest silver rates and updates on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a href="index.html" class="logo">Daily Rate PK</a>
+<nav><a href="index.html">Home</a><a href="petrol-price.html">Petrol</a><a href="gold-price.html">Gold</a><a href="dollar-rate.html">Dollar</a><a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<main class="container page-content">
+<section class="page-hero">
+<span class="eyebrow">SILVER RATE • PAKISTAN</span>
+<h1>Silver Price in Pakistan Today</h1>
+<p>Latest silver rate per tola, 10 grams and gram.</p>
+</section>
+
+<section class="rate-highlight">
+<h2>Today's Silver Rate</h2>
+<div class="price" id="silver-main-price">Updating</div>
+<p>Silver — Per Tola</p>
+</section>
+
+<section class="content-section">
+<h2>Silver Prices</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Unit</th><th>Rate</th></tr>
+<tr><td>1 Tola</td><td id="silver-tola">Updating</td></tr>
+<tr><td>10 Grams</td><td id="silver-10g">Updating</td></tr>
+<tr><td>1 Gram</td><td id="silver-gram">Updating</td></tr>
+</table>
+</div>
+</section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the silver price in Pakistan today?</h3>
+<p>The latest verified silver rate will be displayed above.</p>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</div></footer>
+
+<script src="data.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const r = DAILY_RATES.metals;
+
+    const money = value =>
+        value === null || value === undefined
+            ? "Updating"
+            : "PKR " + Number(value).toLocaleString("en-PK", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              });
+
+    document.getElementById("silver-main-price").textContent = money(r.silverTola);
+    document.getElementById("silver-tola").textContent = money(r.silverTola);
+    document.getElementById("silver-10g").textContent = money(r.silver10g);
+    document.getElementById("silver-gram").textContent = money(r.silverGram);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,3261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #111827;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.site-header {
+    background: #0b1220;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #dbe4f0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #0b1220, #172554);
+    color: white;
+    padding: 95px 0 85px;
+}
+
+.eyebrow {
+    display: inline-block;
+    background: rgba(255,255,255,.09);
+    border: 1px solid rgba(255,255,255,.12);
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    max-width: 780px;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 13px 20px;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.primary {
+    background: #38bdf8;
+    color: #06111f;
+}
+
+.secondary {
+    border: 1px solid rgba(255,255,255,.25);
+    color: white;
+}
+
+.updated {
+    margin-top: 25px;
+    font-size: 12px !important;
+    color: #94a3b8 !important;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 0;
+}
+
+.alt {
+    background: #eef2f7;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading > span {
+    color: #0284c7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 5px 0 7px;
+    letter-spacing: -.8px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+
+/* RATE CARDS */
+
+.rate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.rate-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: .2s ease;
+    box-shadow: 0 5px 20px rgba(15,23,42,.04);
+}
+
+.rate-card:hover {
+    transform: translateY(-4px);
+    border-color: #7dd3fc;
+    box-shadow: 0 12px 30px rgba(15,23,42,.08);
+}
+
+.rate-card .icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: #f0f9ff;
+    border-radius: 12px;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.rate-card h3 {
+    font-size: 18px;
+}
+
+.rate-card p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.rate-card b {
+    margin-left: auto;
+    color: #0284c7;
+}
+
+
+/* TOOLS */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tool-card {
+    background: white;
+    padding: 27px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: .2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    border-color: #7dd3fc;
+}
+
+.tool-card > span {
+    font-size: 28px;
+}
+
+.tool-card h3 {
+    margin-top: 12px;
+}
+
+.tool-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* UPDATES */
+
+.update-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.update-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 28px;
+}
+
+.update-card > span {
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.update-card h3 {
+    margin: 10px 0;
+}
+
+.update-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.update-card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about p {
+    max-width: 750px;
+    color: #64748b;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #0b1220;
+    color: white;
+    padding-top: 55px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+.footer p {
+    color: #94a3b8;
+    margin-top: 12px;
+    max-width: 350px;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footer-grid > div:not(:first-child) a {
+    display: block;
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.footer-grid a:hover {
+    color: #38bdf8;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 17px 0;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .rate-grid,
+    .update-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+}
+
+.price {
+    margin-left: auto;
+    font-size: 24px;
+    color: #0284c7;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th,
+td {
+    padding: 17px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f8fafc;
+    font-size: 13px;
+}
+
+td {
+    color: #475569;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+    .price {
+        font-size: 19px;
+    }
+
+    .rate-card {
+        padding: 18px;
+    }
+
+}
+
+.rate-card strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+/* DailyRatePK modern polish */
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.1px;
+}
+
+header {
+    backdrop-filter: blur(12px);
+}
+
+.rate-card {
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.rate-card h3 {
+    font-weight: 750;
+    letter-spacing: -0.2px;
+}
+
+.rate-card strong {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+button,
+.btn,
+a.button {
+    border-radius: 10px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover {
+    transform: translateY(-2px);
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: 850;
+    letter-spacing: -0.8px;
+    text-decoration: none;
+}
+
+.logo span {
+    font-weight: 850;
+    letter-spacing: -0.8px;
+}
+
+
+/* Premium homepage design */
+.hero {
+    padding: 90px 20px 75px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(56,189,248,.16), transparent 55%);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    max-width: 850px;
+    margin: 18px auto;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.rate-card {
+    background: rgba(255,255,255,.96);
+    padding: 24px;
+    min-height: 145px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+
+/* Fix hero contrast */
+.hero {
+    background: linear-gradient(135deg, #0b1220 0%, #172554 55%, #0f3b5f 100%);
+    color: #ffffff;
+}
+
+.hero h1 {
+    color: #ffffff;
+}
+
+.hero p {
+    color: #cbd5e1;
+}
+
+.eyebrow {
+    color: #e2e8f0;
+}
+
+
+/* Premium rate cards */
+.rate-grid {
+    gap: 22px;
+}
+
+.rate-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 10px 28px rgba(15,23,42,.08);
+}
+
+.rate-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #38bdf8;
+}
+
+.rate-card .icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.rate-card h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.rate-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.rate-card strong {
+    color: #0f172a;
+}
+
+
+/* ===== DailyRatePK Modern Theme ===== */
+
+body {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.site-header {
+    background: rgba(8, 15, 30, .96);
+    box-shadow: 0 4px 20px rgba(2, 8, 23, .18);
+}
+
+.nav {
+    min-height: 76px;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+nav {
+    gap: 22px;
+}
+
+nav a {
+    padding: 8px 4px;
+    transition: color .2s ease;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 90px;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(56,189,248,.18), transparent 30%),
+        radial-gradient(circle at 15% 80%, rgba(59,130,246,.12), transparent 32%),
+        linear-gradient(135deg, #07111f 0%, #102a43 55%, #0b3854 100%);
+}
+
+.hero h1 {
+    font-weight: 800;
+}
+
+.hero-actions .btn {
+    padding: 14px 22px;
+    border-radius: 12px;
+}
+
+.primary {
+    box-shadow: 0 8px 22px rgba(56,189,248,.22);
+}
+
+.section {
+    padding: 85px 0;
+}
+
+.section-heading {
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.rate-grid {
+    gap: 24px;
+}
+
+.rate-card {
+    background: rgba(255,255,255,.98);
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(15,23,42,.06);
+}
+
+.rate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(15,23,42,.11);
+}
+
+.rate-card .icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f2fe;
+    border-radius: 14px;
+}
+
+.rate-card h3 {
+    color: #0f172a;
+}
+
+.rate-card strong {
+    color: #0284c7;
+    font-size: 1.18rem;
+}
+
+.btn {
+    box-shadow: 0 4px 12px rgba(15,23,42,.06);
+}
+
+table {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15,23,42,.06);
+}
+
+th {
+    background: #eaf6fc;
+    color: #0f172a;
+}
+
+footer {
+    background: #07111f;
+    color: #cbd5e1;
+}
+
+
+/* ===== Professional Brand Header ===== */
+
+.site-header {
+    background: linear-gradient(135deg, #07111f, #0f2035);
+    border-bottom: 1px solid rgba(56,189,248,.16);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 850;
+    letter-spacing: -1px;
+}
+
+.logo::before {
+    content: "DR";
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    box-shadow: 0 6px 18px rgba(56,189,248,.22);
+}
+
+nav a {
+    padding: 9px 13px;
+    border-radius: 10px;
+    color: #dbeafe;
+    transition: all .2s ease;
+}
+
+nav a:hover {
+    background: rgba(56,189,248,.10);
+    color: #38bdf8;
+}
+
+
+
+/* ===== DailyRatePK Premium Logo ===== */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+
+.logo::before {
+    display: none !important;
+    content: none !important;
+}
+
+.logo-mark {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px 8px;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #10b981, #047857);
+    box-shadow: 0 7px 20px rgba(16,185,129,.25);
+}
+
+.logo-mark i {
+    display: block;
+    width: 5px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.logo-mark i:nth-child(1) { height: 10px; }
+.logo-mark i:nth-child(2) { height: 16px; }
+.logo-mark i:nth-child(3) { height: 23px; }
+
+.logo-text {
+    color: #f8fafc;
+    font-weight: 800;
+}
+
+.logo-text b {
+    color: #34d399;
+    font-weight: 900;
+}
+
+
+/* ===== Premium Navigation ===== */
+
+nav {
+    align-items: center;
+    gap: 5px;
+}
+
+nav a {
+    padding: 9px 12px;
+    border-radius: 9px;
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+nav a:hover {
+    background: rgba(16,185,129,.12);
+    color: #34d399;
+    transform: translateY(-1px);
+}
+
+
+/* ===== Premium Hero ===== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: -80px;
+    top: -100px;
+    border-radius: 50%;
+    background: rgba(16,185,129,.10);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.eyebrow {
+    border-color: rgba(52,211,153,.25);
+    background: rgba(16,185,129,.09);
+    color: #6ee7b7;
+    font-weight: 800;
+}
+
+.hero h1 {
+    font-weight: 850;
+    letter-spacing: -2.5px;
+}
+
+.hero h1::first-line {
+    color: #ffffff;
+}
+
+.hero-actions .primary {
+    background: linear-gradient(135deg, #34d399, #059669);
+    color: #032018;
+    border: 0;
+    box-shadow: 0 10px 25px rgba(16,185,129,.22);
+}
+
+.hero-actions .primary:hover {
+    box-shadow: 0 14px 30px rgba(16,185,129,.30);
+}
+
+.hero-actions .secondary {
+    border-color: rgba(255,255,255,.18);
+    background: rgba(255,255,255,.04);
+    backdrop-filter: blur(8px);
+}
+
+
+/* ===== Premium Rate Cards ===== */
+
+.rate-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+}
+
+.rate-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #10b981, #38bdf8);
+    opacity: .9;
+}
+
+.rate-card .icon {
+    background: linear-gradient(135deg, #ecfdf5, #e0f2fe);
+    border: 1px solid #dbeafe;
+    box-shadow: 0 6px 15px rgba(15,23,42,.06);
+}
+
+.rate-card h3 {
+    margin-top: 18px;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.rate-card strong {
+    display: block;
+    font-size: 22px;
+    margin-top: 10px;
+    color: #059669;
+    letter-spacing: -.4px;
+}
+
+.rate-card:hover {
+    border-color: rgba(16,185,129,.28);
+}
+
+
+/* ===== Premium Section Headings ===== */
+
+.section-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 42px;
+}
+
+.section-heading h2 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 850;
+    letter-spacing: -1.2px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+
+/* ===== Premium Buttons ===== */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 13px 20px;
+    font-weight: 800;
+    letter-spacing: -.1px;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent 25%,
+        rgba(255,255,255,.22) 50%,
+        transparent 75%
+    );
+    transform: translateX(-120%);
+    transition: transform .5s ease;
+}
+
+.btn:hover::after {
+    transform: translateX(120%);
+}
+
+.primary {
+    border: 0;
+    background: linear-gradient(135deg, #34d399, #059669);
+    color: #032018;
+    box-shadow: 0 10px 24px rgba(16,185,129,.20);
+}
+
+.secondary {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(16,185,129,.28);
+}
+
+.secondary:hover {
+    border-color: #10b981;
+    color: #047857;
+}
+
+
+/* ===== Premium Footer ===== */
+
+footer {
+    margin-top: 40px;
+    padding: 55px 0 25px;
+    background:
+        radial-gradient(circle at 80% 0%, rgba(16,185,129,.10), transparent 30%),
+        #07111f;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+footer h3,
+footer h4 {
+    color: #f8fafc;
+    font-weight: 800;
+}
+
+footer p,
+footer li,
+footer a {
+    color: #94a3b8;
+}
+
+footer a {
+    transition: color .2s ease;
+}
+
+footer a:hover {
+    color: #34d399;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,.08);
+    margin: 30px 0 20px;
+}
+
+
+/* ===== Premium Mobile Responsive ===== */
+
+@media (max-width: 768px) {
+
+    .nav {
+        min-height: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 9px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero {
+        padding: 70px 18px 65px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1.8px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .rate-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .rate-card {
+        padding: 23px;
+    }
+}
+
+
+/* ===== Premium Tables ===== */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+}
+
+th,
+td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    font-weight: 800;
+    background: linear-gradient(135deg, #ecfdf5, #f0f9ff);
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+tbody tr {
+    transition: background .2s ease;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ===== Premium Rate Status ===== */
+
+.rate-card strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    border-radius: 9px;
+    background: #ecfdf5;
+    border: 1px solid #d1fae5;
+}
+
+.rate-card strong:has(+ *) {
+    display: inline-flex;
+}
+
+
+/* ===== Premium Layout Polish ===== */
+
+.container {
+    width: min(1120px, calc(100% - 36px));
+    margin-inline: auto;
+}
+
+main {
+    overflow: hidden;
+}
+
+.section-heading .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 26px, 1120px);
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* ===== Premium Smooth Experience ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background: #10b981;
+    color: #ffffff;
+}
+
+
+/* ===== Premium Update Badge ===== */
+
+.updated,
+.last-updated,
+.update-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(16,185,129,.08);
+    border: 1px solid rgba(16,185,129,.18);
+    color: #047857;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.updated::before,
+.last-updated::before,
+.update-time::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 0 4px rgba(16,185,129,.10);
+}
+
+
+/* ===== Final Premium Calculator Design ===== */
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.calc-box {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 10px 30px rgba(15,23,42,.07);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.calc-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0f766e, #10b981);
+}
+
+.calc-box:hover {
+    transform: translateY(-5px);
+    border-color: #cbd5e1;
+    box-shadow: 0 18px 40px rgba(15,23,42,.12);
+}
+
+.calc-box h2 {
+    margin-top: 4px;
+    margin-bottom: 18px;
+    color: #0f172a;
+    font-weight: 850;
+    letter-spacing: -.5px;
+}
+
+.calc-box label {
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    color: #334155;
+    font-weight: 700;
+}
+
+.calc-box input,
+.calc-box select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 15px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.calc-box input:focus,
+.calc-box select:focus {
+    border-color: #0f766e;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(16,185,129,.12);
+}
+
+.calc-box button {
+    width: 100%;
+    padding: 13px 18px;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0f766e, #10b981);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(15,118,110,.18);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.calc-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(15,118,110,.25);
+}
+
+.calc-box button:active {
+    transform: translateY(0);
+}
+
+.calc-box .result {
+    margin-top: 18px;
+    min-height: 24px;
+    padding: 15px 16px;
+    border-radius: 14px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #14532d;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .calculator-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .calc-box {
+        padding: 21px;
+        border-radius: 18px;
+    }
+
+    .page-hero {
+        padding: 48px 18px 42px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #111827;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.site-header {
+    background: #0b1220;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #dbe4f0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #0b1220, #172554);
+    color: white;
+    padding: 95px 0 85px;
+}
+
+.eyebrow {
+    display: inline-block;
+    background: rgba(255,255,255,.09);
+    border: 1px solid rgba(255,255,255,.12);
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    max-width: 780px;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 13px 20px;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.primary {
+    background: #38bdf8;
+    color: #06111f;
+}
+
+.secondary {
+    border: 1px solid rgba(255,255,255,.25);
+    color: white;
+}
+
+.updated {
+    margin-top: 25px;
+    font-size: 12px !important;
+    color: #94a3b8 !important;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 0;
+}
+
+.alt {
+    background: #eef2f7;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading > span {
+    color: #0284c7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 5px 0 7px;
+    letter-spacing: -.8px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+
+/* RATE CARDS */
+
+.rate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.rate-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: .2s ease;
+    box-shadow: 0 5px 20px rgba(15,23,42,.04);
+}
+
+.rate-card:hover {
+    transform: translateY(-4px);
+    border-color: #7dd3fc;
+    box-shadow: 0 12px 30px rgba(15,23,42,.08);
+}
+
+.rate-card .icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: #f0f9ff;
+    border-radius: 12px;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.rate-card h3 {
+    font-size: 18px;
+}
+
+.rate-card p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.rate-card b {
+    margin-left: auto;
+    color: #0284c7;
+}
+
+
+/* TOOLS */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tool-card {
+    background: white;
+    padding: 27px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: .2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    border-color: #7dd3fc;
+}
+
+.tool-card > span {
+    font-size: 28px;
+}
+
+.tool-card h3 {
+    margin-top: 12px;
+}
+
+.tool-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* UPDATES */
+
+.update-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.update-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 28px;
+}
+
+.update-card > span {
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.update-card h3 {
+    margin: 10px 0;
+}
+
+.update-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.update-card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about p {
+    max-width: 750px;
+    color: #64748b;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #0b1220;
+    color: white;
+    padding-top: 55px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+.footer p {
+    color: #94a3b8;
+    margin-top: 12px;
+    max-width: 350px;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footer-grid > div:not(:first-child) a {
+    display: block;
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.footer-grid a:hover {
+    color: #38bdf8;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 17px 0;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .rate-grid,
+    .update-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+}
+
+.price {
+    margin-left: auto;
+    font-size: 24px;
+    color: #0284c7;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th,
+td {
+    padding: 17px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f8fafc;
+    font-size: 13px;
+}
+
+td {
+    color: #475569;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+    .price {
+        font-size: 19px;
+    }
+
+    .rate-card {
+        padding: 18px;
+    }
+
+}
+
+.rate-card strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+/* DailyRatePK modern polish */
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.1px;
+}
+
+header {
+    backdrop-filter: blur(12px);
+}
+
+.rate-card {
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.rate-card h3 {
+    font-weight: 750;
+    letter-spacing: -0.2px;
+}
+
+.rate-card strong {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+button,
+.btn,
+a.button {
+    border-radius: 10px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover {
+    transform: translateY(-2px);
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: 850;
+    letter-spacing: -0.8px;
+    text-decoration: none;
+}
+
+.logo span {
+    font-weight: 850;
+    letter-spacing: -0.8px;
+}
+
+
+/* Premium homepage design */
+.hero {
+    padding: 90px 20px 75px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(56,189,248,.16), transparent 55%);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    max-width: 850px;
+    margin: 18px auto;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.rate-card {
+    background: rgba(255,255,255,.96);
+    padding: 24px;
+    min-height: 145px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+
+/* Fix hero contrast */
+.hero {
+    background: linear-gradient(135deg, #0b1220 0%, #172554 55%, #0f3b5f 100%);
+    color: #ffffff;
+}
+
+.hero h1 {
+    color: #ffffff;
+}
+
+.hero p {
+    color: #cbd5e1;
+}
+
+.eyebrow {
+    color: #e2e8f0;
+}
+
+
+/* Premium rate cards */
+.rate-grid {
+    gap: 22px;
+}
+
+.rate-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 10px 28px rgba(15,23,42,.08);
+}
+
+.rate-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #38bdf8;
+}
+
+.rate-card .icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.rate-card h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.rate-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.rate-card strong {
+    color: #0f172a;
+}
+
+
+/* ===== DailyRatePK Modern Theme ===== */
+
+body {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.site-header {
+    background: rgba(8, 15, 30, .96);
+    box-shadow: 0 4px 20px rgba(2, 8, 23, .18);
+}
+
+.nav {
+    min-height: 76px;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+nav {
+    gap: 22px;
+}
+
+nav a {
+    padding: 8px 4px;
+    transition: color .2s ease;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 90px;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(56,189,248,.18), transparent 30%),
+        radial-gradient(circle at 15% 80%, rgba(59,130,246,.12), transparent 32%),
+        linear-gradient(135deg, #07111f 0%, #102a43 55%, #0b3854 100%);
+}
+
+.hero h1 {
+    font-weight: 800;
+}
+
+.hero-actions .btn {
+    padding: 14px 22px;
+    border-radius: 12px;
+}
+
+.primary {
+    box-shadow: 0 8px 22px rgba(56,189,248,.22);
+}
+
+.section {
+    padding: 85px 0;
+}
+
+.section-heading {
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.rate-grid {
+    gap: 24px;
+}
+
+.rate-card {
+    background: rgba(255,255,255,.98);
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(15,23,42,.06);
+}
+
+.rate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(15,23,42,.11);
+}
+
+.rate-card .icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f2fe;
+    border-radius: 14px;
+}
+
+.rate-card h3 {
+    color: #0f172a;
+}
+
+.rate-card strong {
+    color: #0284c7;
+    font-size: 1.18rem;
+}
+
+.btn {
+    box-shadow: 0 4px 12px rgba(15,23,42,.06);
+}
+
+table {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15,23,42,.06);
+}
+
+th {
+    background: #eaf6fc;
+    color: #0f172a;
+}
+
+footer {
+    background: #07111f;
+    color: #cbd5e1;
+}
+
+
+/* ===== Professional Brand Header ===== */
+
+.site-header {
+    background: linear-gradient(135deg, #07111f, #0f2035);
+    border-bottom: 1px solid rgba(56,189,248,.16);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 850;
+    letter-spacing: -1px;
+}
+
+.logo::before {
+    content: "DR";
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    box-shadow: 0 6px 18px rgba(56,189,248,.22);
+}
+
+nav a {
+    padding: 9px 13px;
+    border-radius: 10px;
+    color: #dbeafe;
+    transition: all .2s ease;
+}
+
+nav a:hover {
+    background: rgba(56,189,248,.10);
+    color: #38bdf8;
+}
+
+
+
+/* ===== DailyRatePK Premium Logo ===== */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+
+.logo::before {
+    display: none !important;
+    content: none !important;
+}
+
+.logo-mark {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px 8px;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #10b981, #047857);
+    box-shadow: 0 7px 20px rgba(16,185,129,.25);
+}
+
+.logo-mark i {
+    display: block;
+    width: 5px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.logo-mark i:nth-child(1) { height: 10px; }
+.logo-mark i:nth-child(2) { height: 16px; }
+.logo-mark i:nth-child(3) { height: 23px; }
+
+.logo-text {
+    color: #f8fafc;
+    font-weight: 800;
+}
+
+.logo-text b {
+    color: #34d399;
+    font-weight: 900;
+}
+
+
+/* ===== Premium Navigation ===== */
+
+nav {
+    align-items: center;
+    gap: 5px;
+}
+
+nav a {
+    padding: 9px 12px;
+    border-radius: 9px;
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+nav a:hover {
+    background: rgba(16,185,129,.12);
+    color: #34d399;
+    transform: translateY(-1px);
+}
+
+
+/* ===== Premium Hero ===== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: -80px;
+    top: -100px;
+    border-radius: 50%;
+    background: rgba(16,185,129,.10);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.eyebrow {
+    border-color: rgba(52,211,153,.25);
+    background: rgba(16,185,129,.09);
+    color: #6ee7b7;
+    font-weight: 800;
+}
+
+.hero h1 {
+    font-weight: 850;
+    letter-spacing: -2.5px;
+}
+
+.hero h1::first-line {
+    color: #ffffff;
+}
+
+.hero-actions .primary {
+    background: linear-gradient(135deg, #34d399, #059669);
+    color: #032018;
+    border: 0;
+    box-shadow: 0 10px 25px rgba(16,185,129,.22);
+}
+
+.hero-actions .primary:hover {
+    box-shadow: 0 14px 30px rgba(16,185,129,.30);
+}
+
+.hero-actions .secondary {
+    border-color: rgba(255,255,255,.18);
+    background: rgba(255,255,255,.04);
+    backdrop-filter: blur(8px);
+}
+
+
+/* ===== Premium Rate Cards ===== */
+
+.rate-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+}
+
+.rate-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #10b981, #38bdf8);
+    opacity: .9;
+}
+
+.rate-card .icon {
+    background: linear-gradient(135deg, #ecfdf5, #e0f2fe);
+    border: 1px solid #dbeafe;
+    box-shadow: 0 6px 15px rgba(15,23,42,.06);
+}
+
+.rate-card h3 {
+    margin-top: 18px;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.rate-card strong {
+    display: block;
+    font-size: 22px;
+    margin-top: 10px;
+    color: #059669;
+    letter-spacing: -.4px;
+}
+
+.rate-card:hover {
+    border-color: rgba(16,185,129,.28);
+}
+
+
+/* ===== Premium Section Headings ===== */
+
+.section-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 42px;
+}
+
+.section-heading h2 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 850;
+    letter-spacing: -1.2px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+
+/* ===== Premium Buttons ===== */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 13px 20px;
+    font-weight: 800;
+    letter-spacing: -.1px;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent 25%,
+        rgba(255,255,255,.22) 50%,
+        transparent 75%
+    );
+    transform: translateX(-120%);
+    transition: transform .5s ease;
+}
+
+.btn:hover::after {
+    transform: translateX(120%);
+}
+
+.primary {
+    border: 0;
+    background: linear-gradient(135deg, #34d399, #059669);
+    color: #032018;
+    box-shadow: 0 10px 24px rgba(16,185,129,.20);
+}
+
+.secondary {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(16,185,129,.28);
+}
+
+.secondary:hover {
+    border-color: #10b981;
+    color: #047857;
+}
+
+
+/* ===== Premium Footer ===== */
+
+footer {
+    margin-top: 40px;
+    padding: 55px 0 25px;
+    background:
+        radial-gradient(circle at 80% 0%, rgba(16,185,129,.10), transparent 30%),
+        #07111f;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+footer h3,
+footer h4 {
+    color: #f8fafc;
+    font-weight: 800;
+}
+
+footer p,
+footer li,
+footer a {
+    color: #94a3b8;
+}
+
+footer a {
+    transition: color .2s ease;
+}
+
+footer a:hover {
+    color: #34d399;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,.08);
+    margin: 30px 0 20px;
+}
+
+
+/* ===== Premium Mobile Responsive ===== */
+
+@media (max-width: 768px) {
+
+    .nav {
+        min-height: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 9px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero {
+        padding: 70px 18px 65px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1.8px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .rate-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .rate-card {
+        padding: 23px;
+    }
+}
+
+
+/* ===== Premium Tables ===== */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+}
+
+th,
+td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    font-weight: 800;
+    background: linear-gradient(135deg, #ecfdf5, #f0f9ff);
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+tbody tr {
+    transition: background .2s ease;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ===== Premium Rate Status ===== */
+
+.rate-card strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    border-radius: 9px;
+    background: #ecfdf5;
+    border: 1px solid #d1fae5;
+}
+
+.rate-card strong:has(+ *) {
+    display: inline-flex;
+}
+
+
+/* ===== Premium Layout Polish ===== */
+
+.container {
+    width: min(1120px, calc(100% - 36px));
+    margin-inline: auto;
+}
+
+main {
+    overflow: hidden;
+}
+
+.section-heading .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 26px, 1120px);
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* ===== Premium Smooth Experience ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background: #10b981;
+    color: #ffffff;
+}
+
+
+/* ===== Premium Update Badge ===== */
+
+.updated,
+.last-updated,
+.update-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(16,185,129,.08);
+    border: 1px solid rgba(16,185,129,.18);
+    color: #047857;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.updated::before,
+.last-updated::before,
+.update-time::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 0 4px rgba(16,185,129,.10);
+}
+
+
+/* ===== Premium Calculator Cards ===== */
+
+.calculator-card,
+.calc-card {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(15,23,42,.06);
+    transition: .2s ease;
+}
+
+.calculator-card:hover,
+.calc-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(16,185,129,.25);
+    box-shadow: 0 15px 32px rgba(15,23,42,.10);
+}
+
+.calculator-card h3,
+.calc-card h3 {
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.calculator-card input,
+.calc-card input,
+.calculator-card select,
+.calc-card select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    background: #fff;
+    transition: .2s ease;
+}
+
+.calculator-card input:focus,
+.calc-card input:focus,
+.calculator-card select:focus,
+.calc-card select:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16,185,129,.10);
+}
+
+
+/* ===== Premium Rate Detail Pages ===== */
+
+.rate-detail,
+.rate-page,
+.rate-box {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(15,23,42,.07);
+}
+
+.rate-detail h1,
+.rate-page h1,
+.rate-box h1 {
+    font-weight: 850;
+    letter-spacing: -1.5px;
+    color: #0f172a;
+}
+
+.rate-detail .price,
+.rate-page .price,
+.rate-box .price {
+    font-size: clamp(32px, 6vw, 48px);
+    font-weight: 900;
+    color: #059669;
+    letter-spacing: -1.5px;
+}
+
+
+/* ===== Premium Forms ===== */
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    border-radius: 11px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 4px rgba(16,185,129,.10);
+}
+
+label {
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* ===== Premium Calculator Results ===== */
+
+.result,
+.result-box,
+.calculation-result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ecfdf5, #f0f9ff);
+    border: 1px solid #d1fae5;
+    box-shadow: 0 8px 20px rgba(15,23,42,.05);
+}
+
+.result strong,
+.result-box strong,
+.calculation-result strong {
+    font-size: 24px;
+    font-weight: 900;
+    color: #047857;
+}
+
+
+/* ===== Premium Content Sections ===== */
+
+.content-box,
+.info-box,
+.about-box,
+.contact-box,
+.policy-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(15,23,42,.06);
+}
+
+.content-box h2,
+.info-box h2,
+.about-box h2,
+.contact-box h2,
+.policy-box h2 {
+    color: #0f172a;
+    font-weight: 850;
+    letter-spacing: -.7px;
+}
+
+.content-box p,
+.info-box p,
+.about-box p,
+.contact-box p,
+.policy-box p {
+    color: #475569;
+    line-height: 1.8;
+}
+
+
+/* ===== Final Spacing & Touch Polish ===== */
+
+.rate-card,
+.calculator-card,
+.calc-card,
+.content-box,
+.info-box,
+.about-box,
+.contact-box,
+.policy-box {
+    box-sizing: border-box;
+}
+
+.rate-card a,
+.calculator-card a,
+.calc-card a {
+    display: inline-block;
+    margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+    .rate-card,
+    .calculator-card,
+    .calc-card,
+    .content-box,
+    .info-box,
+    .about-box,
+    .contact-box,
+    .policy-box {
+        padding: 21px;
+        border-radius: 16px;
+    }
+
+    button,
+    .btn,
+    input,
+    select,
+    textarea {
+        min-height: 44px;
+    }
+}
+
+
+/* ===== Final Header Alignment ===== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        position: relative;
+    }
+}
+
+
+/* ===== Premium Link Effects ===== */
+
+main a:not(.btn) {
+    color: #047857;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color .2s ease;
+}
+
+main a:not(.btn):hover {
+    color: #0284c7;
+}
+
+
+/* ===== Premium Page Hero ===== */
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 65px 20px 55px;
+    margin-bottom: 35px;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 85% 15%, rgba(16,185,129,.16), transparent 32%),
+        linear-gradient(135deg, #07111f, #102a43 60%, #0b3854);
+    color: #fff;
+    box-shadow: 0 15px 35px rgba(15,23,42,.12);
+}
+
+.page-hero h1 {
+    color: #fff;
+    font-weight: 850;
+    letter-spacing: -1.8px;
+}
+
+.page-hero p {
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 12px auto 0;
+    line-height: 1.7;
+}
+
+
+/* ===== Premium Calculator Cards ===== */
+
+.calculator-grid {
+    gap: 24px;
+}
+
+.calc-box {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,.96);
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 10px 30px rgba(15,23,42,.07);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.calc-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0f766e, #10b981);
+}
+
+.calc-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(15,23,42,.12);
+    border-color: #cbd5e1;
+}
+
+.calc-box h2 {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    color: #0f172a;
+    font-weight: 800;
+}
+
+.calc-box p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+
+/* ===== Premium Calculator Inputs ===== */
+
+.calc-box input,
+.calc-box select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 15px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.calc-box input:focus,
+.calc-box select:focus {
+    border-color: #0f766e;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(16,185,129,.12);
+}
+
+.calc-box button {
+    width: 100%;
+    padding: 13px 18px;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0f766e, #10b981);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(15,118,110,.18);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.calc-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(15,118,110,.25);
+}
+
+.calc-box button:active {
+    transform: translateY(0);
+}
+
+
+/* ===== Premium Calculator Results ===== */
+
+.calc-box .result,
+.calc-result {
+    margin-top: 18px;
+    padding: 15px 16px;
+    border-radius: 14px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #14532d;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+/* ===== Mobile Calculator Layout ===== */
+
+@media (max-width: 700px) {
+
+    .page-hero {
+        padding: 48px 18px 42px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+    }
+
+    .calculator-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .calc-box {
+        padding: 21px;
+        border-radius: 18px;
+    }
+
+    .calc-box h2 {
+        font-size: 21px;
+    }
+
+}
+
+/* ===== Premium Update Badge ===== */
+
+.verified-update {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin: 24px auto 0;
+    padding: 10px 16px;
+    border: 1px solid rgba(16,185,129,.20);
+    border-radius: 999px;
+    background: rgba(255,255,255,.92);
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    box-shadow: 0 8px 22px rgba(15,23,42,.08);
+}
+
+.verified-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    border-radius: 50%;
+    background: #10b981;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* ===== Premium Descriptions ===== */
+
+.premium-description {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    color: #526173;
+    line-height: 1.7;
+}
+
+/* ===== Footer Brand Match ===== */
+
+.footer .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    font-weight: 850;
+    letter-spacing: -.7px;
+}
+
+.footer .logo span {
+    color: #10b981;
+}
+
+@media (max-width: 700px) {
+    .verified-update {
+        max-width: 92%;
+        font-size: 12px;
+        padding: 9px 13px;
+    }
+
+    .premium-description {
+        font-size: 15px;
+    }
+}
+
+
+/* ===== Footer DailyRatePK Brand ===== */
+
+.footer .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.footer .logo-mark {
+    width: 43px;
+    height: 43px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    flex: 0 0 43px;
+}
+
+.footer .logo-text {
+    color: #f8fafc;
+    font-weight: 800;
+}
+
+.footer .logo-text b {
+    color: #34d399;
+    font-weight: 900;
+}
+
+@media (max-width: 700px) {
+    .footer .logo {
+        font-size: 24px;
+    }
+}
+
+
+/* ===== Footer Brand Colors ===== */
+
+.footer .logo-text .brand-daily {
+    color: #34d399;
+}
+
+.footer .logo-text .brand-rate {
+    color: #38bdf8;
+}
+
+.footer .logo-text b {
+    color: #34d399;
+}
+
+
+/* ===== Footer PK Blue ===== */
+
+.footer .logo-text b {
+    color: #38bdf8;
+}
+

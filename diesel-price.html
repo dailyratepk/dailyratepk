@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diesel Price in Pakistan Today — Latest Diesel Rate | Daily Rate PK</title>
+<meta name="description" content="Check today's diesel price in Pakistan, latest HSD rate per litre, diesel price history and fuel updates on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a href="index.html" class="logo">Daily Rate PK</a>
+<nav><a href="index.html">Home</a><a href="petrol-price.html">Petrol</a><a href="gold-price.html">Gold</a><a href="dollar-rate.html">Dollar</a><a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<main class="container page-content">
+<section class="page-hero">
+<span class="eyebrow">FUEL • PAKISTAN</span>
+<h1>Diesel Price in Pakistan Today</h1>
+<p>Latest High Speed Diesel price per litre in Pakistan.</p>
+</section>
+
+<section class="rate-highlight">
+<h2>Today's Diesel Price</h2>
+<div class="price">Updating</div>
+<p>High Speed Diesel — Per Litre</p>
+</section>
+
+<section class="content-section">
+<h2>Diesel Price History</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Date</th><th>Diesel Price</th><th>Change</th></tr>
+<tr><td>Latest</td><td>Updating</td><td>Updating</td></tr>
+<tr><td>Previous</td><td>Updating</td><td>Updating</td></tr>
+</table>
+</div>
+</section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the diesel price in Pakistan today?</h3>
+<p>The latest verified diesel rate will be displayed above.</p>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</div></footer>
+
+<script src="data.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const v = DAILY_RATES.fuel.diesel;
+
+  document.querySelectorAll(".price").forEach(e => {
+    e.textContent = v === null
+      ? "Updating"
+      : "PKR " + Number(v).toLocaleString("en-PK");
+  });
+});
+</script>
+</body>
+</html>
