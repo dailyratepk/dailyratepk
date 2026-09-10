@@ -90,7 +90,7 @@ jobs:
           )
 
           diesel = find_price(
-              r"HI-CETANE DIESEL EURO 5.*?Rs\.?\s*([0-9]+\.[0-9]+)\s*/Ltr"
+              r"<td>\s*HI-CETANE DIESEL EURO 5\s*</td>\s*<td>\s*Rs\.?\s*([0-9]+\.[0-9]+)\s*/Ltr"
           )
 
           lpg = find_price(
