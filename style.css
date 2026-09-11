@@ -3265,78 +3265,72 @@ main a:not(.btn):hover {
 .logo-text b { color: #38bdf8 !important; }
 
 
-/* DailyRatePK Premium Logo */
-.site-header .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+/* ===== DailyRatePK Image Logo — Final ===== */
+.site-header .logo,
+.footer .logo {
+  display:flex !important;
+  align-items:center !important;
+  text-decoration:none !important;
 }
-.site-header .logo img {
-  width: 190px;
-  height: auto;
-  display: block;
-  object-fit: contain;
+.site-header .logo img,
+.footer .logo img {
+  width:160px !important;
+  height:auto !important;
+  max-width:160px !important;
+  max-height:48px !important;
+  object-fit:contain !important;
+  display:block !important;
 }
-@media (max-width: 600px) {
-  .site-header .logo img {
-    width: 155px;
+@media (max-width:600px) {
+  .site-header .logo img,
+  .footer .logo img {
+    width:120px !important;
+    max-width:120px !important;
+    max-height:40px !important;
   }
 }
 
-/* DailyRatePK Unified Premium Theme */
-body {
-  background: #071014 !important;
-  color: #eaf7f4 !important;
-}
-
-.site-header {
-  background: rgba(7,16,20,.92) !important;
-  border-bottom: 1px solid rgba(80,255,200,.12) !important;
-  backdrop-filter: blur(14px);
-}
-
-main section,
-.card,
-.rate-card,
-.calculator-card,
-.content-card,
-.price-card,
-.info-card {
-  background: rgba(13,27,32,.82) !important;
-  border-color: rgba(80,255,200,.12) !important;
-}
-
-h1, h2, h3 {
-  color: #f4fffc !important;
-}
-
-a {
-  color: #62e6bd;
-}
-
-button,
-.btn,
-.cta,
-input[type="submit"] {
-  border-radius: 12px;
-}
-
-footer {
-  background: #050b0e !important;
-  border-top: 1px solid rgba(80,255,200,.10);
-}
-
-
-/* Compact DailyRatePK Header Logo */
-.site-header .logo img {
-  width: 125px !important;
-  max-height: 42px;
-  object-fit: contain;
+/* ===== FINAL IMAGE LOGO SIZE ===== */
+.site-header .logo img,
+.footer .logo img {
+  width: 220px !important;
+  height: auto !important;
+  max-width: 220px !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 @media (max-width: 600px) {
-  .site-header .logo img {
-    width: 105px !important;
-    max-height: 36px;
+  .site-header .logo img,
+  .footer .logo img {
+    width: 170px !important;
+    max-width: 170px !important;
+    max-height: none !important;
   }
 }
+
+}
+
+/* ===== PRICE PAGES FOOTER FIX ===== */
+body.page-footer-fix{min-height:100vh!important;display:flex!important;flex-direction:column!important}
+body.page-footer-fix main{flex:1!important}
+body.page-footer-fix .footer{width:100%!important;text-align:left!important}
+body.page-footer-fix .footer .logo{justify-content:flex-start!important;margin-left:0!important;margin-right:auto!important}
+body.page-footer-fix .footer .logo img{width:150px!important;max-width:150px!important;max-height:none!important}
+@media(max-width:600px){
+body.page-footer-fix .footer .logo img{width:125px!important;max-width:125px!important}
+}
+/* FINAL PRICE PAGE FOOTER FIX */
+body.page-footer-fix{min-height:100vh!important;display:flex!important;flex-direction:column!important}
+body.page-footer-fix main{flex:1 0 auto!important}
+body.page-footer-fix footer,.page-footer-fix .footer{margin-top:auto!important;width:100%!important;box-sizing:border-box!important;padding:24px 5%!important;text-align:left!important}
+body.page-footer-fix footer .footer-grid,.page-footer-fix .footer-grid{align-items:start!important}
+body.page-footer-fix footer .logo,.page-footer-fix .footer .logo{justify-content:flex-start!important;margin:0!important}
+body.page-footer-fix footer .logo img,.page-footer-fix .footer .logo img{width:150px!important;max-width:150px!important;height:auto!important;max-height:45px!important}
+@media(max-width:600px){body.page-footer-fix footer,.page-footer-fix .footer{padding:20px 5%!important}body.page-footer-fix footer .logo img,.page-footer-fix .footer .logo img{width:130px!important;max-width:130px!important}}
+/* ===== COMPACT SPACING — NO DESIGN CHANGE ===== */
+section{margin-top:0!important;margin-bottom:0!important}
+section+section{padding-top:45px!important}
+.container{margin-top:0!important;margin-bottom:0!important}
+main{padding-top:0!important}
