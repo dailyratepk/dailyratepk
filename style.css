@@ -3326,3 +3326,17 @@ footer {
   border-top: 1px solid rgba(80,255,200,.10);
 }
 
+
+/* Compact DailyRatePK Header Logo */
+.site-header .logo img {
+  width: 125px !important;
+  max-height: 42px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .site-header .logo img {
+    width: 105px !important;
+    max-height: 36px;
+  }
+}
