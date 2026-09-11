@@ -3259,3 +3259,7 @@ main a:not(.btn):hover {
     color: #38bdf8;
 }
 
+/* ===== DailyRatePK Brand Colors ===== */
+.logo-text .brand-daily { color: #34d399 !important; }
+.logo-text .brand-rate { color: #38bdf8 !important; }
+.logo-text b { color: #38bdf8 !important; }
