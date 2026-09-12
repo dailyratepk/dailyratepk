@@ -3334,3 +3334,32 @@ section{margin-top:0!important;margin-bottom:0!important}
 section+section{padding-top:45px!important}
 .container{margin-top:0!important;margin-bottom:0!important}
 main{padding-top:0!important}
+
+/* ===== FINAL FOOTER LOGO SIZE ===== */
+body.page-footer-fix .footer .logo img{
+  width:180px!important;
+  max-width:180px!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+@media(max-width:600px){
+  body.page-footer-fix .footer .logo img{
+    width:150px!important;
+    max-width:150px!important;
+  }
+}
+
+/* ===== RESTORE SETTINGS FROM POLISH WEBSITE LAYOUT ===== */
+body.page-footer-fix .footer .logo img{
+  width:150px!important;
+  max-width:150px!important;
+  height:auto!important;
+  max-height:none!important;
+}
+@media(max-width:600px){
+  body.page-footer-fix .footer .logo img{
+    width:125px!important;
+    max-width:125px!important;
+  }
+}
