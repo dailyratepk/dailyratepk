@@ -3312,54 +3312,35 @@ main a:not(.btn):hover {
 
 }
 
-/* ===== PRICE PAGES FOOTER FIX ===== */
-body.page-footer-fix{min-height:100vh!important;display:flex!important;flex-direction:column!important}
-body.page-footer-fix main{flex:1!important}
-body.page-footer-fix .footer{width:100%!important;text-align:left!important}
-body.page-footer-fix .footer .logo{justify-content:flex-start!important;margin-left:0!important;margin-right:auto!important}
-body.page-footer-fix .footer .logo img{width:150px!important;max-width:150px!important;max-height:none!important}
-@media(max-width:600px){
-body.page-footer-fix .footer .logo img{width:125px!important;max-width:125px!important}
-}
-/* FINAL PRICE PAGE FOOTER FIX */
-body.page-footer-fix{min-height:100vh!important;display:flex!important;flex-direction:column!important}
-body.page-footer-fix main{flex:1 0 auto!important}
-body.page-footer-fix footer,.page-footer-fix .footer{margin-top:auto!important;width:100%!important;box-sizing:border-box!important;padding:24px 5%!important;text-align:left!important}
-body.page-footer-fix footer .footer-grid,.page-footer-fix .footer-grid{align-items:start!important}
-body.page-footer-fix footer .logo,.page-footer-fix .footer .logo{justify-content:flex-start!important;margin:0!important}
-body.page-footer-fix footer .logo img,.page-footer-fix .footer .logo img{width:150px!important;max-width:150px!important;height:auto!important;max-height:45px!important}
-@media(max-width:600px){body.page-footer-fix footer,.page-footer-fix .footer{padding:20px 5%!important}body.page-footer-fix footer .logo img,.page-footer-fix .footer .logo img{width:130px!important;max-width:130px!important}}
-/* ===== COMPACT SPACING — NO DESIGN CHANGE ===== */
-section{margin-top:0!important;margin-bottom:0!important}
-section+section{padding-top:45px!important}
-.container{margin-top:0!important;margin-bottom:0!important}
-main{padding-top:0!important}
-
-/* ===== FINAL FOOTER LOGO SIZE ===== */
-body.page-footer-fix .footer .logo img{
-  width:180px!important;
-  max-width:180px!important;
-  height:auto!important;
-  max-height:none!important;
-  object-fit:contain!important;
-}
-@media(max-width:600px){
-  body.page-footer-fix .footer .logo img{
-    width:150px!important;
-    max-width:150px!important;
-  }
-}
-
-/* ===== RESTORE SETTINGS FROM POLISH WEBSITE LAYOUT ===== */
-body.page-footer-fix .footer .logo img{
+/* ===== FINAL FOOTER LOGO — ALL PAGES ===== */
+.footer .logo img,
+footer .logo img{
   width:150px!important;
   max-width:150px!important;
   height:auto!important;
-  max-height:none!important;
+  max-height:45px!important;
+  object-fit:contain!important;
 }
+
 @media(max-width:600px){
-  body.page-footer-fix .footer .logo img{
+  .footer .logo img,
+  footer .logo img{
     width:125px!important;
     max-width:125px!important;
+    max-height:40px!important;
   }
+}
+
+/* Price/legal pages footer stays at bottom */
+body.page-footer-fix{
+  min-height:100vh!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+body.page-footer-fix main{
+  flex:1 0 auto!important;
+}
+body.page-footer-fix footer,
+body.page-footer-fix .footer{
+  margin-top:auto!important;
 }
