@@ -5685,9 +5685,3 @@ footer a{
     transition:none!important;
   }
 }
-/* Remove decorative lines under homepage section headings */
-main h2::after,
-main h3::after{
-  display:none!important;
-  content:none!important;
-}

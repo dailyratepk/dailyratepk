@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diesel Price in Pakistan Today | Latest Diesel Rate in Pakistan</title>
+<meta name="description" content="Check the latest diesel price in Pakistan today. Get the current diesel rate per litre and updated fuel prices on Daily Rate PK.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-footer-fix">
+<header class="site-header"><div class="container nav-wrap">
+<a class="logo" href="index.html"><img src="images/dailyratepk-logo.png" alt="DailyRatePK"></a>
+<nav><a href="index.html">Home</a><a href="petrol-price.html">Petrol</a><a href="gold-price.html">Gold</a><a href="dollar-rate.html">Dollar</a><a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<main class="container page-content">
+<section class="page-hero">
+<span class="eyebrow">FUEL • PAKISTAN</span>
+<h1>Diesel Price in Pakistan Today</h1>
+<p>Latest High Speed Diesel price per litre in Pakistan.</p>
+</section>
+
+<section class="rate-highlight">
+<h2>Today's Diesel Price</h2>
+<div class="price">Updating</div>
+<p>High Speed Diesel — Per Litre</p>
+</section>
+
+<section class="content-section">
+<h2>Diesel Price History</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Date</th><th>Diesel Price</th><th>Change</th></tr>
+<tr><td>Latest</td><td>Updating</td><td>Updating</td></tr>
+<tr><td>Previous</td><td>Updating</td><td>Updating</td></tr>
+</table>
+</div>
+</section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the diesel price in Pakistan today?</h3>
+<p>The latest verified diesel rate will be displayed above.</p>
+</section>
+
+<section class="section related-seo">
+<div class="container">
+<div class="section-heading">
+<span>RELATED PAKISTAN RATES</span>
+<h2>Diesel and Other Pakistan Rates</h2>
+<p>Explore the latest Pakistan rates, prices and useful calculators on Daily Rate PK.</p>
+</div>
+<div class="rate-grid">
+<a href="petrol-price.html" class="rate-card"><div><h3>Petrol Price</h3><p>Check the latest petrol price in Pakistan</p></div><b>View →</b></a><a href="gold-price.html" class="rate-card"><div><h3>Gold Price</h3><p>Check the latest gold price in Pakistan</p></div><b>View →</b></a><a href="silver-price.html" class="rate-card"><div><h3>Silver Price</h3><p>Check the latest silver price in Pakistan</p></div><b>View →</b></a><a href="dollar-rate.html" class="rate-card"><div><h3>Dollar Rate</h3><p>Check the latest dollar rate in Pakistan</p></div><b>View →</b></a><a href="lpg-price.html" class="rate-card"><div><h3>LPG Price</h3><p>Check the latest lpg price in Pakistan</p></div><b>View →</b></a><a href="calculators.html" class="rate-card"><div><h3>Pakistan Calculators</h3><p>Check the latest pakistan calculators in Pakistan</p></div><b>View →</b></a>
+</div>
+</div>
+</section>
+
+
+<section class="content-section seo-content">
+<h2>Diesel Price in Pakistan Today</h2>
+<p>Check the latest diesel price in Pakistan today and the current diesel rate per litre. Stay updated with Pakistan fuel prices on Daily Rate PK.</p>
+<p>Daily Rate PK makes it easy to check important Pakistan rates in one place. Rates can change due to market conditions, international prices, exchange rates and local market factors, so always check the latest displayed rate before making a purchase or transaction.</p>
+<!-- SEO INFORMATION SECTION -->
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<a class="logo" href="index.html"><img src="images/dailyratepk-logo.png" alt="DailyRatePK"></a>
+<p>© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</p>
+</div>
+
+<div class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms & Conditions</a> · <a href="disclaimer.html">Disclaimer</a></div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const v = DAILY_RATES.fuel.diesel;
+
+  document.querySelectorAll(".price").forEach(e => {
+    e.textContent = v === null
+      ? "Updating"
+      : "PKR " + Number(v).toLocaleString("en-PK");
+  });
+});
+</script>
+</body>
+</html>
