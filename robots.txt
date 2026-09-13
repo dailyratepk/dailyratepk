@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dailyratepk.github.io/dailyratepk/sitemap.xml
+Sitemap: https://dailyratepk.publicvm.com/sitemap.xml
