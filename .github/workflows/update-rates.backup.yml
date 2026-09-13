@@ -84,7 +84,7 @@ jobs:
 
           silver_tola = money(
               silver_page,
-              r"current per tola silver rate.*?Rs\.?\s*([0-9,]+)"
+              r"current per tola gold rate in Silver.*?Rs\.?\s*([0-9,]+)"
           )
 
           # -------------------------
