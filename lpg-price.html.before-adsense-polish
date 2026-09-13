@@ -10,7 +10,7 @@
 </head>
 <body class="page-footer-fix">
 <header class="site-header"><div class="container nav-wrap">
-<a class="logo" href="index.html"><img src="images/dailyratepk-logo.webp" alt="DailyRatePK"></a>
+<a class="logo" href="index.html"><img src="images/dailyratepk-logo.png" alt="DailyRatePK"></a>
 <nav><a href="index.html">Home</a><a href="petrol-price.html">Petrol</a><a href="gold-price.html">Gold</a><a href="dollar-rate.html">Dollar</a><a href="calculators.html">Calculators</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
 </div></header>
 
@@ -83,7 +83,7 @@
 
 <footer>
 <div class="container">
-<a class="logo" href="index.html"><img src="images/dailyratepk-logo.webp" alt="DailyRatePK"></a>
+<a class="logo" href="index.html"><img src="images/dailyratepk-logo.png" alt="DailyRatePK"></a>
 <p>© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</p>
 </div>
 

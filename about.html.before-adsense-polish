@@ -12,7 +12,7 @@
 
 <header class="site-header">
 <div class="container nav-wrap">
-<a class="logo" href="index.html"><img src="images/dailyratepk-logo.webp" alt="DailyRatePK"></a>
+<a class="logo" href="index.html"><img src="images/dailyratepk-logo.png" alt="DailyRatePK"></a>
 <nav>
 <a href="index.html">Home</a>
 <a href="petrol-price.html">Petrol</a>
@@ -26,29 +26,29 @@
 <section class="page-hero">
 <span class="eyebrow">ABOUT US</span>
 <h1>About Daily Rate PK</h1>
-<p>Daily Rate PK is an independent information website designed to make commonly searched prices and rates in Pakistan easier to find, understand and compare on both mobile phones and desktop devices.</p>
+<p>Pakistan's daily rates, prices and useful calculators in one place.</p>
 </section>
 
 <section class="content-section">
 <h2>What is Daily Rate PK?</h2>
-<p>Daily Rate PK brings important Pakistan price information together in one convenient place. Visitors can check fuel prices, precious metal rates, currency information and LPG prices without having to search through multiple pages. Our goal is to present this information in a clear and easy-to-use format.</p>
+<p>Daily Rate PK is a price and rate information website focused on Pakistan. We aim to make commonly searched daily rates easy to find in one simple and mobile-friendly place.</p>
 </section>
 
 <section class="content-section">
 <h2>What We Cover</h2>
-<p>We cover petrol and diesel prices, gold and silver rates, USD to PKR and other currency information, LPG prices, selected price history and practical online calculators. Each section is organized around information that people commonly look for when checking daily prices in Pakistan.</p>
+<p>Our website covers fuel prices, gold and silver rates, currency exchange rates, LPG prices, price history and useful calculators.</p>
 </section>
 
 <section class="content-section">
 <h2>Our Goal</h2>
-<p>Our goal is to provide useful information in a simple format and keep rate information as current as possible. We also provide calculators that can help visitors estimate fuel costs, convert currencies, calculate gold values and perform percentage calculations.</p>
+<p>Our goal is to provide clear, useful and regularly updated information while making it easy for visitors to compare rates and calculate prices.</p>
 </section>
 <section class="content-section">
 <div class="container">
 <h2>About Daily Rate PK</h2>
-<p>Daily Rate PK focuses on practical rate information for everyday users in Pakistan. The website brings petrol, diesel, gold, silver, dollar and LPG information together with useful calculators and supporting explanations. We aim to make frequently needed information easy to access, especially for visitors using mobile devices.</p>
+<p>Daily Rate PK is a simple Pakistan rates website that helps users check important daily prices in one place. You can find petrol, diesel, gold, silver, dollar and LPG rates in Pakistan along with useful online calculators.</p>
 <h2>Pakistan Daily Rates & Prices</h2>
-<p>Rates can change because of official price revisions, international markets, exchange-rate movements and other economic or market conditions. For this reason, visitors should consider the displayed rates as general informational data and verify important prices with the relevant official or professional source before making a significant transaction.</p>
+<p>Our goal is to make it easy to find commonly searched rates and prices in Pakistan. Daily Rate PK brings fuel prices, precious metal rates, currency rates and calculators together in a simple format.</p>
 <h2>Explore Daily Rate PK</h2>
 <p>Check the latest <a href="petrol-price.html">petrol price</a>, <a href="diesel-price.html">diesel price</a>, <a href="gold-price.html">gold rate</a>, <a href="silver-price.html">silver rate</a>, <a href="dollar-rate.html">dollar rate</a> and <a href="lpg-price.html">LPG price</a> in Pakistan.</p>
 </div>
@@ -58,7 +58,7 @@
 
 <footer>
 <div class="container">
-<a class="logo" href="index.html"><img src="images/dailyratepk-logo.webp" alt="DailyRatePK"></a>
+<a class="logo" href="index.html"><img src="images/dailyratepk-logo.png" alt="DailyRatePK"></a>
 <p>© 2026 Daily Rate PK — Pakistan Daily Rates & Prices.</p>
 </div>
 
