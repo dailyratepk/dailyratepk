@@ -5,6 +5,10 @@ on:
     - cron: "15 * * * *"
   workflow_dispatch:
 
+concurrency:
+  group: update-rates-main
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -156,4 +160,5 @@ jobs:
           git config user.email "actions@github.com"
           git add data.js
           git diff --cached --quiet || git commit -m "Auto update daily rates"
+          git pull --rebase origin main
           git push
