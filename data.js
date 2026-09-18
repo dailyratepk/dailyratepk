@@ -1,5 +1,5 @@
 const DAILY_RATES = {
-  updated: "Automatic update: September 17, 2026 23:20 UTC",
+  updated: "Automatic update: September 18, 2026 00:31 UTC",
 
   fuel: {
     petrol: 390.79,
@@ -18,9 +18,9 @@ const DAILY_RATES = {
   },
 
   currency: {
-    usd: 277.1991,
+    usd: 277.2474,
     aed: 3.6729,
-    sar: 3.7094,
+    sar: 3.7066,
     gbp: 0.7487
   }
 };
