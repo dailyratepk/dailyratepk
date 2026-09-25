@@ -3,18 +3,18 @@ const DAILY_RATES = {
 
   fuel: {
     petrol: 389.28,
-    diesel: 412.12,
+    diesel: 389.28,
     lpg: 258.65
   },
 
   metals: {
-    gold24kTola: 443186.80,
-    gold24k10g: 379967.35,
-    gold24kGram: 37996.74,
-    gold22kTola: 406254.56,
-    silverTola: 6608.66,
-    silver10g: 5665.95,
-    silverGram: 566.60
+    gold24kTola: 449300.00,
+    gold24k10g: 385208.52,
+    gold24kGram: 38520.85,
+    gold22kTola: 411858.33,
+    silverTola: 6794.00,
+    silver10g: 5824.85,
+    silverGram: 582.49
   },
 
   currency: {
