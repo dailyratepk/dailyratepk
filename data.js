@@ -1,5 +1,5 @@
 const DAILY_RATES = {
-  updated: "Automatic update: October 01, 2026 08:31 UTC",
+  updated: "Automatic update: October 01, 2026 09:29 UTC",
 
   fuel: {
     petrol: 387.40,
@@ -21,6 +21,6 @@ const DAILY_RATES = {
     usd: 277.0500,
     aed: 3.6725,
     sar: 3.7810,
-    gbp: 0.7556
+    gbp: 0.7569
   }
 };
