@@ -1,5 +1,5 @@
 const DAILY_RATES = {
-  updated: "Automatic update: October 05, 2026 12:35 UTC",
+  updated: "Automatic update: October 05, 2026 13:34 UTC",
 
   fuel: {
     petrol: 392.76,
@@ -8,19 +8,19 @@ const DAILY_RATES = {
   },
 
   metals: {
-    gold24kTola: 431633.68,
-    gold24k10g: 370062.26,
-    gold24kGram: 37006.23,
-    gold22kTola: 395664.21,
-    silverTola: 6411.11,
-    silver10g: 5496.58,
-    silverGram: 549.66
+    gold24kTola: 431687.51,
+    gold24k10g: 370108.41,
+    gold24kGram: 37010.84,
+    gold22kTola: 395713.55,
+    silverTola: 6383.92,
+    silver10g: 5473.27,
+    silverGram: 547.33
   },
 
   currency: {
     usd: 276.9360,
     aed: 3.6725,
     sar: 3.7464,
-    gbp: 0.7560
+    gbp: 0.7566
   }
 };
