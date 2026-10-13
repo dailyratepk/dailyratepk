@@ -1,20 +1,20 @@
 const DAILY_RATES = {
-  updated: "Automatic update: October 13, 2026 03:31 UTC",
+  updated: "Automatic update: October 13, 2026 03:32 UTC",
 
   fuel: {
     petrol: 395.37,
-    diesel: 396.85,
+    diesel: 395.37,
     lpg: 279.34
   },
 
   metals: {
-    gold24kTola: 434819.92,
-    gold24k10g: 372793.99,
-    gold24kGram: 37279.40,
-    gold22kTola: 398584.93,
-    silverTola: 6267.69,
-    silver10g: 5373.62,
-    silverGram: 537.36
+    gold24kTola: 436000.00,
+    gold24k10g: 373805.73,
+    gold24kGram: 37380.57,
+    gold22kTola: 399666.67,
+    silverTola: 6794.00,
+    silver10g: 5824.85,
+    silverGram: 582.49
   },
 
   currency: {
