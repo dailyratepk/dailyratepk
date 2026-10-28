@@ -1,9 +1,9 @@
 const DAILY_RATES = {
-  updated: "Automatic update: October 28, 2026 15:59 UTC",
+  updated: "Automatic update: October 28, 2026 21:01 UTC",
 
   fuel: {
-    petrol: 376.06,
-    diesel: 376.06,
+    petrol: 377.91,
+    diesel: 377.91,
     lpg: 279.34
   },
 
@@ -18,9 +18,9 @@ const DAILY_RATES = {
   },
 
   currency: {
-    usd: 276.5267,
-    aed: 3.6725,
-    sar: 3.7503,
-    gbp: 0.7519
+    usd: 276.6500,
+    aed: 3.6730,
+    sar: 3.7535,
+    gbp: 0.7502
   }
 };
