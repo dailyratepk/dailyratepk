@@ -8,13 +8,13 @@ const DAILY_RATES = {
   },
 
   metals: {
-    gold24kTola: 401793.46,
-    gold24k10g: 344478.67,
-    gold24kGram: 34447.87,
-    gold22kTola: 368310.67,
-    silverTola: 5088.08,
-    silver10g: 4362.28,
-    silverGram: 436.23
+    gold24kTola: 415800.00,
+    gold24k10g: 356487.21,
+    gold24kGram: 35648.72,
+    gold22kTola: 381150.00,
+    silverTola: 6794.00,
+    silver10g: 5824.85,
+    silverGram: 582.49
   },
 
   currency: {
